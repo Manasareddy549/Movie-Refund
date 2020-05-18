@@ -18,6 +18,18 @@ public class Seats {
 	@Column(length = 4)
 	private int price;
 	
+	public Seats(int sno, String seat_type, int available_seats, int price) {
+		super();
+		this.sno = sno;
+		this.seat_type = seat_type;
+		this.available_seats = available_seats;
+		this.price = price;
+	}
+	
+	public Seats() {
+		super();
+	}
+
 	public int getSno() {
 		return sno;
 	}

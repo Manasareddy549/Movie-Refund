@@ -169,7 +169,7 @@ public class MovieService implements MovieServiceInterface  {
 		List<Refund> list=refund.findAll();
 		return list;
 	}
-
+//updating customer details
 	@Override
 	public String updateCustomer(Customer cus) throws InvalidDetailsException {
 		boolean bool = account.existsById(cus.getAccount_no());

@@ -1,5 +1,6 @@
 package com.cap.anurag.entity;
 
+
 import javax.persistence.Column;
 
 import javax.persistence.Entity;
@@ -23,6 +24,18 @@ public class Refund {
 	@Column(length = 10)
 	private String date_of_refund;
 
+	
+	public Refund() {
+		super();
+	}
+	public Refund(int sno, int account_no, int money_refunded, int booking_id, String date_of_refund) {
+		super();
+		this.sno = sno;
+		this.account_no = account_no;
+		this.money_refunded = money_refunded;
+		this.booking_id = booking_id;
+		this.date_of_refund = date_of_refund;
+	}
 	public int getSno() {
 		return sno;
 	}
