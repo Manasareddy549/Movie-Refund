@@ -12,6 +12,8 @@ import javax.persistence.Table;
 public class Account {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	@Column(length = 2)
+	
+	//attributes
 	private int sno;
 	@Id
 	@Column(length = 30)
